@@ -16,7 +16,7 @@ void setup() {
   Serial.begin(9600);
 
   WiFiManager wifiManager;
-  wifiManager.autoConnect("TempSensor");
+  wifiManager.autoConnect("climate_sensor");
  
   server.on("/humidity", []() {   //Define the handling function for the path
   
